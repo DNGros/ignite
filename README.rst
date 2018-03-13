@@ -70,8 +70,8 @@ You can then construct your :code:`Trainer` and train for `num_epochs` as follow
 
     from ignite.trainer import Trainer 
     
-    trainer = Trainer(train_dataloader, training_update_function)
-    trainer.run(max_epochs=5)
+    trainer = Trainer(training_update_function)
+    trainer.run(train_dataloader, max_epochs=5)
 
 Training & Validation History
 +++++++++++++++++++++++++++++
